@@ -1,0 +1,224 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Batch 1.1 (1 - 10) | Milo_Blog</title><meta name="author" content="Milo"><meta name="copyright" content="Milo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Paper 1 Title: Model Predictive Path Integral Control for Agile Unmanned Aerial Vehicles Authors: Michal Minaˇ r´ ık, Robert Pˇ eniˇ cka, Vojtˇ ech Von´ asek, and Martin Saska Conference: 2024 IEEE&amp;#x">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Batch 1.1 (1 - 10)">
+<meta property="og:url" content="https://zdeng9.github.io/2026/05/14/Batch-1.1-City/index.html">
+<meta property="og:site_name" content="Milo_Blog">
+<meta property="og:description" content="Paper 1 Title: Model Predictive Path Integral Control for Agile Unmanned Aerial Vehicles Authors: Michal Minaˇ r´ ık, Robert Pˇ eniˇ cka, Vojtˇ ech Von´ asek, and Martin Saska Conference: 2024 IEEE&amp;#x">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://zdeng9.github.io/img/my_avatar.jpg">
+<meta property="article:published_time" content="2026-05-14T04:10:57.000Z">
+<meta property="article:modified_time" content="2026-07-15T07:36:51.589Z">
+<meta property="article:author" content="Milo">
+<meta property="article:tag" content="Paper Review">
+<meta property="article:tag" content="Research">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zdeng9.github.io/img/my_avatar.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Batch 1.1 (1 - 10)",
+  "url": "https://zdeng9.github.io/2026/05/14/Batch-1.1-City/",
+  "image": "https://zdeng9.github.io/img/my_avatar.jpg",
+  "datePublished": "2026-05-14T04:10:57.000Z",
+  "dateModified": "2026-07-15T07:36:51.589Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Milo",
+      "url": "https://Zdeng9.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://zdeng9.github.io/2026/05/14/Batch-1.1-City/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Batch 1.1 (1 - 10)',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/my_avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/categories/Academics/"><i class="fa-fw fas fa-book"></i><span> Academics</span></a></div><div class="menus_item"><a class="site-page" href="/categories/Photograph/"><i class="fa-fw fas fa-camera"></i><span> Photograph</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/my_cover.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Milo_Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">Batch 1.1 (1 - 10)</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  Back to Home</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/categories/Academics/"><i class="fa-fw fas fa-book"></i><span> Academics</span></a></div><div class="menus_item"><a class="site-page" href="/categories/Photograph/"><i class="fa-fw fas fa-camera"></i><span> Photograph</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Batch 1.1 (1 - 10)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2026-05-14T04:10:57.000Z" title="Created 2026-05-14 12:10:57">2026-05-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2026-07-15T07:36:51.589Z" title="Updated 2026-07-15 15:36:51">2026-07-15</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Academics/">Academics</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="Paper-1"><a href="#Paper-1" class="headerlink" title="Paper 1"></a>Paper 1</h2><ul>
+<li><strong>Title</strong>: Model Predictive Path Integral Control for Agile Unmanned Aerial Vehicles</li>
+<li><strong>Authors</strong>: Michal Minaˇ r´ ık, Robert Pˇ eniˇ cka, Vojtˇ ech Von´ asek, and Martin Saska</li>
+<li><strong>Conference</strong>: 2024 IEEE&#x2F;RSJ International Conference on Intelligent Robots and Systems (IROS)</li>
+<li><strong>Link</strong>: <a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/10802756">IEEE</a></li>
+</ul>
+<p>-<strong>Main Contributions</strong>-<br>首次将MPPI算法实际应用到现实环境无人机飞行中。文章阐述了MPPI的算法，建立了无人机动力学模型并进行实地实验。</p>
+<h2 id="Paper-2"><a href="#Paper-2" class="headerlink" title="Paper 2"></a>Paper 2</h2><ul>
+<li><strong>Title</strong>: A Model Predictive Path Integral Method for Fast, Proactive, and Uncertainty-Aware UAV Planning in Cluttered Environments</li>
+<li><strong>Authors</strong>: Jacob Higgins, Nicholas Mohammad, Nicola Bezzo</li>
+<li><strong>Conference</strong>: 2023 IEEE&#x2F;RSJ International Conference on Intelligent Robots and Systems (IROS)</li>
+<li><strong>Link</strong>: <a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/10341501">IEEE</a></li>
+</ul>
+<p>-<strong>Main Contributions</strong>-<br>拓展了MPPI的应用，新增轨迹参数化方法，将未来一段时间内的轨迹预测拆成两段（文中P&#x3D;2，后续可自己调整），减少预测维度从而减少对算力的依赖。第二个创新点是纳入传感器误差等理论和实际飞行的偏差，通过仿真和实际验证得到不收该类噪声影响、纳入风险考量的算法。</p>
+<h2 id="Paper-3"><a href="#Paper-3" class="headerlink" title="Paper 3"></a>Paper 3</h2><ul>
+<li><strong>Title</strong>: Sampling-Based Planning for Guaranteed Safe Energy Management of Hybrid UAV Powertrain Under Complex Uncertain Constraints</li>
+<li><strong>Authors</strong>: Cary L. Butler, Reid D. Smith, Graduate Student Member, IEEE, and Andrew G. Alleyne, Fellow, IEEE</li>
+<li><strong>Journal&#x2F;Conference</strong>: IEEE TRANSACTIONS ON CONTROL SYSTEMS TECHNOLOGY, VOL. 32, NO. 6, NOVEMBER 2024</li>
+<li><strong>Link</strong>: <a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/abstract/document/10596056">IEEE</a></li>
+</ul>
+<p>-<strong>Main Contributions</strong>-<br>本文将ERRT与RMPC耦合进行轨迹规划。前者是高层控制器，规划不可行域并进行树搜索；后者作为下一层控制器，规划未来0.125s的轨迹并计算误差，传送给ERRT。同时文章考虑油电混动无人机的能量消耗问题规划最优轨迹。文章数学推导较多，一些细节需要后续重读理解。</p>
+<h2 id="Paper-4"><a href="#Paper-4" class="headerlink" title="Paper 4"></a>Paper 4</h2><ul>
+<li><strong>Title</strong>: Real-Time Randomized Path Planning for Robot Navigation</li>
+<li><strong>Authors</strong>: James Bruce (jbruce0cs.cmu.edu) Manuela Veloso (mvQcs . cmu. edu) </li>
+<li><strong>Journal&#x2F;Conference</strong>: Proceedings of the 2002 iEEE&#x2F;RSI Intl. Conference on intelligent Robots and Systems</li>
+<li><strong>Link</strong>: <a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/1041624">IEEE</a></li>
+</ul>
+<p>-<strong>Main Contributions</strong>-<br>ERRT：相比RRT增加waypoint cache，可以在时变滚动计算中减少计算量。本文首次实现RRT落地到移动机器人系统上实现轨迹规划。这篇文章的数学推导还不熟悉，得再多问问ai。</p>
+<h2 id="Paper-5"><a href="#Paper-5" class="headerlink" title="Paper 5"></a>Paper 5</h2><ul>
+<li><strong>Title</strong>: FIRM:Feedback Controller-Based Information-State Roadmap<br>–A Framework for Motion Planning Under Uncertainty–</li>
+<li><strong>Authors</strong>: Ali-akbarAgha-mohammadi,SumanChakravorty,NancyM.Amato</li>
+<li><strong>Journal&#x2F;Conference</strong>: 2011 IEEE&#x2F;RSJ International Conference on Intelligent Robots and Systems</li>
+<li><strong>Link</strong>: <a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/abstract/document/6095010">IEEE</a></li>
+</ul>
+<p>-<strong>Main Contributions</strong>-<br>FIRM: FIRM 是 PRM 在信念空间的泛化框架，核心手段：为每个 PRM 状态节点配套 LQG 反馈控制器，强制信念收敛到固定区域，彻底解耦边代价，将复杂连续 POMDP 转化为可求解的有限离散 MDP（FIRM MDP）。先离线计算再线上实时更新，便于部署真机。<br>本文数学性很强，刚看一遍摸不着头脑，后续有需要再看。</p>
+<h2 id="Paper-6"><a href="#Paper-6" class="headerlink" title="Paper 6"></a>Paper 6</h2><ul>
+<li><strong>Title</strong>: Trajectory planning for unmanned aerial vehicles in complicated urban environments: A control network approach</li>
+<li><strong>Authors</strong>: Xi Lin , Chengzhang Wang, Kaiping Wang, Meng Li , Xiangqian Yu</li>
+<li><strong>Journal&#x2F;Conference</strong>: Transportation Research Part C</li>
+<li><strong>Link</strong>: <a target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/article/pii/S0968090X2100139X">TRC</a></li>
+</ul>
+<p>-<strong>Main Contributions</strong>-</p>
+<ol>
+<li>用建筑物的外形和空旷处找点的方法确定控制点，连线组成可能轨迹。再用Dijkstra确定时间最短（这里还建立了一个计算时间的模型），然后Dubins方法平滑化</li>
+<li>建立动力学模型，分为上升、平飞、下降三个阶段设置速度约束</li>
+<li>与PSO benchmark比较，在计算速度和飞行时间上都有明显提高。本文用离线计算控制点、搭建网络；线上实时规划轨迹。这样离线构建环境、线上规划轨迹的思路可以参考。</li>
+</ol>
+<h2 id="Paper-7"><a href="#Paper-7" class="headerlink" title="Paper 7"></a>Paper 7</h2><ul>
+<li><strong>Title</strong>: Hamilton-Jacobi Reachability: A Brief Overview and Recent Advances</li>
+<li><strong>Authors</strong>: Somil Bansal*, Mo Chen*, Sylvia Herbert* and Claire J. Tomlin</li>
+<li><strong>Journal&#x2F;Conference</strong>: 2017 IEEE 56th Annual Conference on Decision and Control (CDC)</li>
+<li><strong>Link</strong>: <a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/8263977">IEEE</a></li>
+</ul>
+<p>-<strong>Reflections</strong>-<br>数学性强的文章看起来很吃力。这篇文章讲了HJ的定义和一些应用。之后说不定可以用来定义Reachability。考虑到HJ的计算量巨大，文中提供了一些减小计算量的方法，还有github库。在ai领域中，学习算法可以降低计算量。</p>
+<h2 id="Paper-8"><a href="#Paper-8" class="headerlink" title="Paper 8"></a>Paper 8</h2><ul>
+<li><strong>Title</strong>: Kinodynamic RRT*: Asymptotically Optimal Motion Planning for Robots with Linear Dynamics</li>
+<li><strong>Authors</strong>: Dustin J. Webb, Jur van den Berg</li>
+<li><strong>Journal&#x2F;Conference</strong>: 2013 IEEE International Conference on Robotics and Automation (ICRA)</li>
+<li><strong>Link</strong>: <a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/6631299">IEEE</a></li>
+</ul>
+<p>-<strong>Reflections</strong>-<br>这篇文章把动力学纳入RRT<em>的约束条件，证明在线性动力学的下kinodymanics RRT</em>求出的是最优轨迹。对于非线性动力学不能给出证明，但可以通过工程方法求的近似解。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://Zdeng9.github.io">Milo</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://zdeng9.github.io/2026/05/14/Batch-1.1-City/">https://zdeng9.github.io/2026/05/14/Batch-1.1-City/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Paper-Review/">Paper Review</a><a class="post-meta__tags" href="/tags/Research/">Research</a></div><div class="post-share"><div class="social-share" data-image="/img/my_avatar.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2026/07/04/Photograph-Changsha/" title="长沙·摄影集"><img class="cover" src="/img/photograph/changsha/cover.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">长沙·摄影集</div></div><div class="info-2"><div class="info-item-1">长沙印象   </div></div></div></a><a class="pagination-related" href="/2026/05/14/Batch-1.2%20(Marine)/" title="Batch 1.2 (1 - 10)"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">Batch 1.2 (1 - 10)</div></div><div class="info-2"><div class="info-item-1">Paper 1 Title: Automatic Carrier Landing System With Fixed Time Control Authors: HAIBIN DUAN, YANG YUAN, ZHIGANGZENG Journal&#x2F;Conference:  IEEE Transactions on Aerospace and Electronic Systems Link: IEEE  -Reflections-这篇文章没太看明白。学习了李亚普洛夫方程在控制稳定性上的作用，文中的无人机、船只动力学和状态建模可以参考。 Paper 2 Title: Model predictive control-based trajectory generation for agile landing of unmanned aerial vehicle on a moving boat Authors: Ondřej Procházka∗, Filip Novák, Tomáš Báča, Parakh M. Gupta, Robert Pěnička, Marti...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2026/05/14/Batch-1.2%20(Marine)/" title="Batch 1.2 (1 - 10)"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-05-14</div><div class="info-item-2">Batch 1.2 (1 - 10)</div></div><div class="info-2"><div class="info-item-1">Paper 1 Title: Automatic Carrier Landing System With Fixed Time Control Authors: HAIBIN DUAN, YANG YUAN, ZHIGANGZENG Journal&#x2F;Conference:  IEEE Transactions on Aerospace and Electronic Systems Link: IEEE  -Reflections-这篇文章没太看明白。学习了李亚普洛夫方程在控制稳定性上的作用，文中的无人机、船只动力学和状态建模可以参考。 Paper 2 Title: Model predictive control-based trajectory generation for agile landing of unmanned aerial vehicle on a moving boat Authors: Ondřej Procházka∗, Filip Novák, Tomáš Báča, Parakh M. Gupta, Robert Pěnička, Marti...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/my_avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Milo</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Paper-1"><span class="toc-number">1.</span> <span class="toc-text">Paper 1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Paper-2"><span class="toc-number">2.</span> <span class="toc-text">Paper 2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Paper-3"><span class="toc-number">3.</span> <span class="toc-text">Paper 3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Paper-4"><span class="toc-number">4.</span> <span class="toc-text">Paper 4</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Paper-5"><span class="toc-number">5.</span> <span class="toc-text">Paper 5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Paper-6"><span class="toc-number">6.</span> <span class="toc-text">Paper 6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Paper-7"><span class="toc-number">7.</span> <span class="toc-text">Paper 7</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Paper-8"><span class="toc-number">8.</span> <span class="toc-text">Paper 8</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/07/04/Photograph-Changsha/" title="长沙·摄影集"><img src="/img/photograph/changsha/cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="长沙·摄影集"/></a><div class="content"><a class="title" href="/2026/07/04/Photograph-Changsha/" title="长沙·摄影集">长沙·摄影集</a><time datetime="2026-07-04T10:00:00.000Z" title="Created 2026-07-04 18:00:00">2026-07-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/14/Batch-1.2%20(Marine)/" title="Batch 1.2 (1 - 10)">Batch 1.2 (1 - 10)</a><time datetime="2026-05-14T04:10:57.000Z" title="Created 2026-05-14 12:10:57">2026-05-14</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/14/Batch-1.1-City/" title="Batch 1.1 (1 - 10)">Batch 1.1 (1 - 10)</a><time datetime="2026-05-14T04:10:57.000Z" title="Created 2026-05-14 12:10:57">2026-05-14</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Milo</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
